@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffead9;
+  height: 100vh;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.transCompContainer {
+  margin: 10px;
+
+  max-height: 200px;
+  max-width: 350px;
+
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+  color: #fff;
+
+  overflow: visible;
+  text-transform: uppercase;
+}
+
+.firstLayer {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: #4f453c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  
+  >p{
+    font-family: 'Train One', cursive;
+    font-size: 1.3rem;
+    overflow: hidden;
+    >span {
+      display: inline-block;
+    }
+  }
+}
+
+.secondLayer {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: #edab8a;
+  left: 10px;
+  top: 10px;
+  border-radius: 5px;
+}
+
+// .thirdLayer {
+//   position: absolute;
+//   z-index: 1;
+//   width: 110%;
+//   height: 110%;
+//   background-color: #c77146;
+//   border-radius: 5px;
+// }
+
+.transLine {
+  position: absolute;
+  z-index: 0;
+  width: 3px;
+  background-color: #4f453c;
+}
+
+.transLineUp {
+  height: 25vh;
+  top: 0;
+}
+
+.transLineDown {
+  height: 23vh;
+  bottom: 0;
+}
