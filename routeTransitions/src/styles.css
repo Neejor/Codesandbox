@@ -1,0 +1,62 @@
+body {
+  background-color: aquamarine;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  /* background-color: brown; */
+  width: 400px;
+  height: 500px;
+  border-radius: 40px;
+  transform-style: preserve-3d;
+  transform: translatez(35px);
+  position: relative;
+  transition: all 2.8s ease;
+  backface-visibility: visible;
+  perspective: 150em;
+}
+
+.content {
+  margin: auto;
+  line-height: 1.5em;
+  backface-visibility: visible;
+  transform: translatez(70px);
+}
+
+.oth {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 500px;
+  border-radius: 40px;
+  background-color: rebeccapurple;
+  backface-visibility: visible;
+  transform: translateZ(-35px);
+}
+
+.container:hover {
+  transform: rotateY(-180deg);
+}
+
+.container:hover content {
+  /* transform: rotateY(-180deg); */
+}
+
+img {
+  width: 206px;
+  height: 275px;
+}
+
+a {
+  color: white;
+}
